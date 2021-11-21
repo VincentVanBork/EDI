@@ -73,12 +73,12 @@ data["session_average_per_page"] = data.groupby(by=["session"])[
 
 print("==================================")
 
-# print(data.url.unique())
+print(data.url.unique())
 max_length = data["time"].count()
 data = data.groupby(by=["url"]).filter(
-    lambda x: (x["time"].count() / max_length) >= 0.05
+    lambda x: (x["time"].count() / max_length) >= 0.005
 )
-# print(data.url.unique())
+print(data.url.unique())
 
 print("==================================")
 
@@ -94,12 +94,7 @@ data.drop("response", inplace=True, axis=1)
 print(data.info())
 
 print("CREATING ARFF")
-chosen_pages = [
-    "/ksc.html",
-    "/shuttle/missions/missions.html",
-    "/shuttle/countdown/",
-    "/",
-]
+chosen_pages = data.url.unique()
 sessions = data.drop(
     ["time", "host", "url", "bytes", "difference", "session_change"], axis=1
 )
@@ -112,11 +107,9 @@ s = []
 t = []
 a = []
 p = []
-
-su = []
-ff = []
-e = []
-r = []
+all_sites = {}
+for site in chosen_pages:
+    all_sites[site] = []
 
 
 for _, group in grouped_sessions:
@@ -124,19 +117,17 @@ for _, group in grouped_sessions:
     a.append(group["session_actions"].unique()[0])
     t.append(group["session_time"].unique()[0])
     p.append(group["session_average_per_page"].unique()[0])
-    su.append(any(group["session_average_per_page"].unique()))
-    ff.append(any(group["session_average_per_page"].unique()))
-    e.append(any(group["session_average_per_page"].unique()))
-    r.append(any(group["session_average_per_page"].unique()))
+    for site_name in all_sites:
+        all_sites[site_name] = any(group[site_name].unique())
 
 unique_sessions["Session"] = s
 unique_sessions["Actions"] = a
 unique_sessions["Time"] = t
 unique_sessions["PageAverageTime"] = p
 
-all_remain_columns = [su, ff, e, r]
-for column, list in zip(chosen_pages, all_remain_columns):
-    unique_sessions[column] = list
+
+for site_key in all_sites:
+    unique_sessions[site_key] = all_sites[site_key]
 
 print(unique_sessions.head())
 print(unique_sessions.count())
