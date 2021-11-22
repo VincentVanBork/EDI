@@ -1,0 +1,46 @@
+/history/apollo/apollo-13/apollo-13-info.html=False = A
+/history/apollo/apollo-13/=False = B
+/history/apollo/apollo-13/images/=False = C
+/history/apollo/apollo-1/apollo-1.html=False = D
+/history/mercury/mercury.html=False = E
+/shuttle/resources/orbiters/columbia.html=False = F
+/whats-new.html=False = G
+/facilities/vab.html=False = H
+/shuttle/countdown/lps/fr.html=False = I
+/facts/about_ksc.html=False = J
+/shuttle/technology/sts-newsref/sts-lcc.html=False = K
+/history/mercury/mercury.html=False = L
+
+1. A B 32904 ==> C 32866    <conf:(1)> lift:(1.02) lev:(0.02) [542] conv:(14.89)
+2. A C 32970 ==> B 32866    <conf:(1)> lift:(1.01) lev:(0.01) [427] conv:(5.06)
+3. A 33080 ==> C 32970    <conf:(1)> lift:(1.01) lev:(0.01) [473] conv:(5.26)
+4. A 33080 ==> B 32904    <conf:(0.99)> lift:(1.01) lev:(0.01) [357] conv:(3.01)
+5. A 33080 ==> C B 32866    <conf:(0.99)> lift:(1.02) lev:(0.02) [637] conv:(3.96)
+6. C D 33008 ==> B 32758    <conf:(0.99)> lift:(1.01) lev:(0.01) [282] conv:(2.12)
+7. C 33618 ==> B 33341    <conf:(0.99)> lift:(1.01) lev:(0.01) [265] conv:(1.95)
+8. C E 32911 ==> B 32637    <conf:(0.99)> lift:(1.01) lev:(0.01) [256] conv:(1.93)
+9. F C 32903 ==> B 32629    <conf:(0.99)> lift:(1.01) lev:(0.01) [256] conv:(1.93)
+10. C G 32837 ==> B 32563    <conf:(0.99)> lift:(1.01) lev:(0.01) [255] conv:(1.93)
+11. C H 32947 ==> B 32672    <conf:(0.99)> lift:(1.01) lev:(0.01) [256] conv:(1.93)
+12. I C 32788 ==> B 32513    <conf:(0.99)> lift:(1.01) lev:(0.01) [253] conv:(1.92)
+13. C J 32786 ==> B 32511    <conf:(0.99)> lift:(1.01) lev:(0.01) [253] conv:(1.92)
+14. C K 32892 ==> B 32616    <conf:(0.99)> lift:(1.01) lev:(0.01) [254] conv:(1.92)
+15. B D 33053 ==> C 32758    <conf:(0.99)> lift:(1.01) lev:(0.01) [288] conv:(1.97)
+16. B E 32959 ==> C 32637    <conf:(0.99)> lift:(1.01) lev:(0.01) [259] conv:(1.8)
+17. B 33670 ==> C 33341    <conf:(0.99)> lift:(1.01) lev:(0.01) [265] conv:(1.8)
+
+
+/history/apollo/apollo-13/apollo-13-info.html=False = A
+/history/apollo/apollo-13/=False = B
+/history/apollo/apollo-13/images/=False = C
+/history/apollo/apollo-1/apollo-1.html=False = D
+
+/history/mercury/mercury.html=False = L
+/history/apollo/apollo-11/apollo-11.html=False = M
+
+1. A B D 17658 ==> D 17654    <conf:(1)> lift:(1.03) lev:(0.03) [491] conv:(99.12)
+2. A B E D 17204 ==> C 17200    <conf:(1)> lift:(1.03) lev:(0.03) [478] conv:(96.57)
+3. A B E 17518 ==> C 17513    <conf:(1)> lift:(1.03) lev:(0.03) [486] conv:(81.94)
+4. L A B 17346 ==> C 17341    <conf:(1)> lift:(1.03) lev:(0.03) [481] conv:(81.14)
+5. A B M 17331 ==> C 17326    <conf:(1)> lift:(1.03) lev:(0.03) [481] conv:(81.07)
+
