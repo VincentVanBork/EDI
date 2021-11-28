@@ -1,0 +1,22 @@
+Time='(0-51.5]' 7224 ==> PageAverageTime='(0-35.5]' 7224                         
+,<conf:(1)> lift:(2.59) lev:(0.13) [4436] conv:(4436.1)
+
+Actions='(0-3.5]' Time='(0-51.5]' 7001 ==> PageAverageTime='(0-35.5]' 7001    
+,<conf:(1)> lift:(2.59) lev:(0.13) [4299] conv:(4299.16)
+
+Actions='(3.5-6.5]' Time='(303.5-887.5]' 3462 ==> PageAverageTime='(35.5-330.5]' 3462  
+,<conf:(1)> lift:(1.75) lev:(0.04) [1484] conv:(1484.36)
+
+Time='(0-51.5]' 7224 ==> Actions='(0-3.5]' 7001                                  
+,<conf:(0.97)> lift:(1.55) lev:(0.07) [2471] conv:(12.03)
+
+Time='(0-51.5]' PageAverageTime='(0-35.5]' 7224 ==> Actions='(0-3.5]' 7001    
+,<conf:(0.97)> lift:(1.55) lev:(0.07) [2471] conv:(12.03)
+
+Time='(0-51.5]' 7224 ==> Actions='(0-3.5]' PageAverageTime='(0-35.5]' 7001    
+,<conf:(0.97)> lift:(3.23) lev:(0.14) [4830] conv:(22.56)
+
+Time='(303.5-887.5]' 8639 ==> PageAverageTime='(35.5-330.5]' 8094                      
+,<conf:(0.94)> lift:(1.64) lev:(0.09) [3159] conv:(6.78)
+
+
